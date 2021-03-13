@@ -5,8 +5,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Hello Wbbbbcorld!'
-
+    io = []
+    for i in range(50):
+        i='hello'
+        io.append(i)
+        print(i)
+    return i
 
 if __name__ == '__main__':
     app.run()
